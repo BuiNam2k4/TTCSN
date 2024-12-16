@@ -20,10 +20,10 @@ public class Thamlam {
         try{
             // Tạo một mảng các vật phẩm
             List<Item> items = new ArrayList<>();
-            items.add(new Item("Đồng hồ", 5, 50));
-            items.add(new Item("Máy tính", 10, 60));
-            items.add(new Item("Gỗ quý", 20, 140));
-            items.add(new Item("Tượng", 25, 100));
+            items.add(new Item("Dong ho", 5, 50));
+            items.add(new Item("May tinh", 10, 60));
+            items.add(new Item("Go quy", 20, 140));
+            items.add(new Item("Tuong", 25, 100));
             items.add(new Item("Tivi", 15, 40));
             
             // Hiển thị danh sách cố định
@@ -60,10 +60,10 @@ public class Thamlam {
                     capacity -= item.getWeight();
                 }
                 // Nếu không đủ chỗ, lấy một phần món đồ
-                else {
-                    knapsack.addItem(item, capacity);
-                    capacity = 0;
-                }
+                //else {
+                  //  knapsack.addItem(item, capacity);
+                    //capacity = 0;
+                //}
             }
          // Kết quả
         System.out.println("Danh sách các món đồ được chọn:");

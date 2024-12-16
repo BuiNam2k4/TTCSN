@@ -40,7 +40,7 @@ public class Knapsack {
     }
     public void displaySelectedItems(){
         System.out.println("\nDanh sách các món đồ được chọn:");
-        System.out.printf("%-15s %-15s %-15s %-15s\n", "Ten mon", "Trong luong(kg)", "Gia tri (USD)", "Ty le gia tri/Trong luong");
+        System.out.printf("%-15s %-15s %-15s %-15s\n", "Ten mon", "Trong luong (kg)", "Gia tri (USD)", "Ty le gia tri/Trong luong");
         
         for (SelectedItem selected : selectedItems){
             System.out.printf("%-15s %-15.2f %-15.2f %-15.2f\n", 
@@ -49,7 +49,7 @@ public class Knapsack {
             selected.getValue(),
             selected.getItem().getValuePerWeight());
         }
-        System.out.printf("\nTong trong luong: %.2f kg\n", totalWeight);
+        System.out.printf("\nTonng trong luong: %.2f kg\n", totalWeight);
         System.out.printf("Tong gia tri: %.2f USD\n", totalValue);
     }
 }
